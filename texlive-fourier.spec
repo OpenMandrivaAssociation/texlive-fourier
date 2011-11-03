@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /fonts/fourier-GUT
+# catalog-date 2008-12-13 14:57:21 +0100
+# catalog-license lppl
+# catalog-version 1.3
 Name:		texlive-fourier
 Version:	1.3
 Release:	1
@@ -267,6 +273,7 @@ a registered trademark of Adobe Systems Incorporated.
 %doc %{_texmfdistdir}/doc/fonts/fourier/fourier-orns.tex
 #- source
 %doc %{_texmfdistdir}/source/fonts/fourier/Makefile
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -277,6 +284,8 @@ a registered trademark of Adobe Systems Incorporated.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
 mkdir -p %{buildroot}%{_texmf_updmap_d}
 cat > %{buildroot}%{_texmf_updmap_d}/fourier <<EOF
 Map fourier-utopia-expert.map
