@@ -16,7 +16,8 @@ Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fourier.doc.tar.x
 Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fourier.source.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
-Requires(post):	texlive-tlpkg
+Requires(pre):	texlive-tlpkg
+Requires(post):	texlive-kpathsea
 Conflicts:	texlive-texmf <= 20110705-3
 Conflicts:	texlive-doc <= 20110705-3
 Requires(post):	texlive-tetex
@@ -37,8 +38,8 @@ a registered trademark of Adobe Systems Incorporated.
     %_texmf_mktexlsr_pre
 
 %post
-    %_texmf_updmap_post
     %_texmf_mktexlsr_post
+    %_texmf_updmap_post
 
 %preun
     if [ $1 -eq 0 ]; then
@@ -48,8 +49,8 @@ a registered trademark of Adobe Systems Incorporated.
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_updmap_post
 	%_texmf_mktexlsr_post
+	%_texmf_updmap_post
     fi
 
 #-----------------------------------------------------------------------
