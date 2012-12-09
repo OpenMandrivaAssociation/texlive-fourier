@@ -275,3 +275,17 @@ cat > %{buildroot}%{_texmf_updmap_d}/fourier <<EOF
 Map fourier-utopia-expert.map
 Map fourier.map
 EOF
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.3-2
++ Revision: 752087
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.3-1
++ Revision: 718497
+- texlive-fourier
+- texlive-fourier
+- texlive-fourier
+- texlive-fourier
+
