@@ -6,7 +6,7 @@
 # catalog-version 1.3
 Name:		texlive-fourier
 Version:	1.3
-Release:	4
+Release:	5
 Summary:	Using Utopia fonts in LaTeX documents
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/fourier-GUT
