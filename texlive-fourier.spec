@@ -1,6 +1,6 @@
 Name:		texlive-fourier
 Version:	61937
-Release:	1
+Release:	2
 Summary:	Using Utopia fonts in LaTeX documents
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/fourier-GUT
