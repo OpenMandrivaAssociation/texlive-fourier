@@ -3,7 +3,7 @@ Version:	72243
 Release:	1
 Summary:	Using Utopia fonts in LaTeX documents
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/fourier-GUT
+URL:		https://www.ctan.org/tex-archive/fonts/fourier-GUT
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fourier.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fourier.doc.r%{version}.tar.xz
